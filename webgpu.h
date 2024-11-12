@@ -1175,22 +1175,22 @@ typedef void (*WGPUProc)(void) WGPU_FUNCTION_ATTRIBUTE;
  * @param message
  * This parameter is @ref PassedWithoutOwnership.
  */
-typedef void (*WGPUBufferMapCallback)(WGPUMapAsyncStatus status, WGPUStringView message, WGPU_NULLABLE void* userdata1, WGPU_NULLABLE void* userdata2) WGPU_FUNCTION_ATTRIBUTE;
+typedef void (*WGPUBufferMapCallback)(WGPUMapAsyncStatus status, WGPUStringView message, WGPU_NULLABLE void * userdata1, WGPU_NULLABLE void * userdata2) WGPU_FUNCTION_ATTRIBUTE;
 /**
  * @param compilationInfo
  * This parameter is @ref PassedWithoutOwnership.
  */
-typedef void (*WGPUCompilationInfoCallback)(WGPUCompilationInfoRequestStatus status, struct WGPUCompilationInfo const * compilationInfo, WGPU_NULLABLE void* userdata1, WGPU_NULLABLE void* userdata2) WGPU_FUNCTION_ATTRIBUTE;
+typedef void (*WGPUCompilationInfoCallback)(WGPUCompilationInfoRequestStatus status, struct WGPUCompilationInfo const * compilationInfo, WGPU_NULLABLE void * userdata1, WGPU_NULLABLE void * userdata2) WGPU_FUNCTION_ATTRIBUTE;
 /**
  * @param pipeline
  * This parameter is @ref PassedWithOwnership.
  */
-typedef void (*WGPUCreateComputePipelineAsyncCallback)(WGPUCreatePipelineAsyncStatus status, WGPUComputePipeline pipeline, WGPUStringView message, WGPU_NULLABLE void* userdata1, WGPU_NULLABLE void* userdata2) WGPU_FUNCTION_ATTRIBUTE;
+typedef void (*WGPUCreateComputePipelineAsyncCallback)(WGPUCreatePipelineAsyncStatus status, WGPUComputePipeline pipeline, WGPUStringView message, WGPU_NULLABLE void * userdata1, WGPU_NULLABLE void * userdata2) WGPU_FUNCTION_ATTRIBUTE;
 /**
  * @param pipeline
  * This parameter is @ref PassedWithOwnership.
  */
-typedef void (*WGPUCreateRenderPipelineAsyncCallback)(WGPUCreatePipelineAsyncStatus status, WGPURenderPipeline pipeline, WGPUStringView message, WGPU_NULLABLE void* userdata1, WGPU_NULLABLE void* userdata2) WGPU_FUNCTION_ATTRIBUTE;
+typedef void (*WGPUCreateRenderPipelineAsyncCallback)(WGPUCreatePipelineAsyncStatus status, WGPURenderPipeline pipeline, WGPUStringView message, WGPU_NULLABLE void * userdata1, WGPU_NULLABLE void * userdata2) WGPU_FUNCTION_ATTRIBUTE;
 /**
  * @param device
  * This parameter is @ref PassedWithoutOwnership.
@@ -1198,7 +1198,7 @@ typedef void (*WGPUCreateRenderPipelineAsyncCallback)(WGPUCreatePipelineAsyncSta
  * @param message
  * This parameter is @ref PassedWithoutOwnership.
  */
-typedef void (*WGPUDeviceLostCallback)(WGPUDevice const * device, WGPUDeviceLostReason reason, WGPUStringView message, WGPU_NULLABLE void* userdata1, WGPU_NULLABLE void* userdata2) WGPU_FUNCTION_ATTRIBUTE;
+typedef void (*WGPUDeviceLostCallback)(WGPUDevice const * device, WGPUDeviceLostReason reason, WGPUStringView message, WGPU_NULLABLE void * userdata1, WGPU_NULLABLE void * userdata2) WGPU_FUNCTION_ATTRIBUTE;
 /**
  * @param status
  * See @ref WGPUPopErrorScopeStatus.
@@ -1212,8 +1212,8 @@ typedef void (*WGPUDeviceLostCallback)(WGPUDevice const * device, WGPUDeviceLost
  * otherwise, this is an empty string.
  * This parameter is @ref PassedWithoutOwnership.
  */
-typedef void (*WGPUPopErrorScopeCallback)(WGPUPopErrorScopeStatus status, WGPUErrorType type, WGPUStringView message, WGPU_NULLABLE void* userdata1, WGPU_NULLABLE void* userdata2) WGPU_FUNCTION_ATTRIBUTE;
-typedef void (*WGPUQueueWorkDoneCallback)(WGPUQueueWorkDoneStatus status, WGPU_NULLABLE void* userdata1, WGPU_NULLABLE void* userdata2) WGPU_FUNCTION_ATTRIBUTE;
+typedef void (*WGPUPopErrorScopeCallback)(WGPUPopErrorScopeStatus status, WGPUErrorType type, WGPUStringView message, WGPU_NULLABLE void * userdata1, WGPU_NULLABLE void * userdata2) WGPU_FUNCTION_ATTRIBUTE;
+typedef void (*WGPUQueueWorkDoneCallback)(WGPUQueueWorkDoneStatus status, WGPU_NULLABLE void * userdata1, WGPU_NULLABLE void * userdata2) WGPU_FUNCTION_ATTRIBUTE;
 /**
  * @param adapter
  * This parameter is @ref PassedWithOwnership.
@@ -1221,7 +1221,7 @@ typedef void (*WGPUQueueWorkDoneCallback)(WGPUQueueWorkDoneStatus status, WGPU_N
  * @param message
  * This parameter is @ref PassedWithoutOwnership.
  */
-typedef void (*WGPURequestAdapterCallback)(WGPURequestAdapterStatus status, WGPUAdapter adapter, WGPUStringView message, WGPU_NULLABLE void* userdata1, WGPU_NULLABLE void* userdata2) WGPU_FUNCTION_ATTRIBUTE;
+typedef void (*WGPURequestAdapterCallback)(WGPURequestAdapterStatus status, WGPUAdapter adapter, WGPUStringView message, WGPU_NULLABLE void * userdata1, WGPU_NULLABLE void * userdata2) WGPU_FUNCTION_ATTRIBUTE;
 /**
  * @param device
  * This parameter is @ref PassedWithOwnership.
@@ -1229,7 +1229,7 @@ typedef void (*WGPURequestAdapterCallback)(WGPURequestAdapterStatus status, WGPU
  * @param message
  * This parameter is @ref PassedWithoutOwnership.
  */
-typedef void (*WGPURequestDeviceCallback)(WGPURequestDeviceStatus status, WGPUDevice device, WGPUStringView message, WGPU_NULLABLE void* userdata1, WGPU_NULLABLE void* userdata2) WGPU_FUNCTION_ATTRIBUTE;
+typedef void (*WGPURequestDeviceCallback)(WGPURequestDeviceStatus status, WGPUDevice device, WGPUStringView message, WGPU_NULLABLE void * userdata1, WGPU_NULLABLE void * userdata2) WGPU_FUNCTION_ATTRIBUTE;
 /**
  * @param device
  * This parameter is @ref PassedWithoutOwnership.
@@ -1237,7 +1237,7 @@ typedef void (*WGPURequestDeviceCallback)(WGPURequestDeviceStatus status, WGPUDe
  * @param message
  * This parameter is @ref PassedWithoutOwnership.
  */
-typedef void (*WGPUUncapturedErrorCallback)(WGPUDevice const * device, WGPUErrorType type, WGPUStringView message, WGPU_NULLABLE void* userdata1, WGPU_NULLABLE void* userdata2) WGPU_FUNCTION_ATTRIBUTE;
+typedef void (*WGPUUncapturedErrorCallback)(WGPUDevice const * device, WGPUErrorType type, WGPUStringView message, WGPU_NULLABLE void * userdata1, WGPU_NULLABLE void * userdata2) WGPU_FUNCTION_ATTRIBUTE;
 
 /** @} */
 /**
@@ -1276,71 +1276,71 @@ typedef struct WGPUChainedStructOut {
 typedef struct WGPUBufferMapCallbackInfo {
     WGPUChainedStruct const * nextInChain;
     WGPUBufferMapCallback callback;
-    WGPU_NULLABLE void* userdata1;
-    WGPU_NULLABLE void* userdata2;
+    WGPU_NULLABLE void * userdata1;
+    WGPU_NULLABLE void * userdata2;
 } WGPUBufferMapCallbackInfo WGPU_STRUCTURE_ATTRIBUTE;
 
 typedef struct WGPUCompilationInfoCallbackInfo {
     WGPUChainedStruct const * nextInChain;
     WGPUCompilationInfoCallback callback;
-    WGPU_NULLABLE void* userdata1;
-    WGPU_NULLABLE void* userdata2;
+    WGPU_NULLABLE void * userdata1;
+    WGPU_NULLABLE void * userdata2;
 } WGPUCompilationInfoCallbackInfo WGPU_STRUCTURE_ATTRIBUTE;
 
 typedef struct WGPUCreateComputePipelineAsyncCallbackInfo {
     WGPUChainedStruct const * nextInChain;
     WGPUCreateComputePipelineAsyncCallback callback;
-    WGPU_NULLABLE void* userdata1;
-    WGPU_NULLABLE void* userdata2;
+    WGPU_NULLABLE void * userdata1;
+    WGPU_NULLABLE void * userdata2;
 } WGPUCreateComputePipelineAsyncCallbackInfo WGPU_STRUCTURE_ATTRIBUTE;
 
 typedef struct WGPUCreateRenderPipelineAsyncCallbackInfo {
     WGPUChainedStruct const * nextInChain;
     WGPUCreateRenderPipelineAsyncCallback callback;
-    WGPU_NULLABLE void* userdata1;
-    WGPU_NULLABLE void* userdata2;
+    WGPU_NULLABLE void * userdata1;
+    WGPU_NULLABLE void * userdata2;
 } WGPUCreateRenderPipelineAsyncCallbackInfo WGPU_STRUCTURE_ATTRIBUTE;
 
 typedef struct WGPUDeviceLostCallbackInfo {
     WGPUChainedStruct const * nextInChain;
     WGPUDeviceLostCallback callback;
-    WGPU_NULLABLE void* userdata1;
-    WGPU_NULLABLE void* userdata2;
+    WGPU_NULLABLE void * userdata1;
+    WGPU_NULLABLE void * userdata2;
 } WGPUDeviceLostCallbackInfo WGPU_STRUCTURE_ATTRIBUTE;
 
 typedef struct WGPUPopErrorScopeCallbackInfo {
     WGPUChainedStruct const * nextInChain;
     WGPUPopErrorScopeCallback callback;
-    WGPU_NULLABLE void* userdata1;
-    WGPU_NULLABLE void* userdata2;
+    WGPU_NULLABLE void * userdata1;
+    WGPU_NULLABLE void * userdata2;
 } WGPUPopErrorScopeCallbackInfo WGPU_STRUCTURE_ATTRIBUTE;
 
 typedef struct WGPUQueueWorkDoneCallbackInfo {
     WGPUChainedStruct const * nextInChain;
     WGPUQueueWorkDoneCallback callback;
-    WGPU_NULLABLE void* userdata1;
-    WGPU_NULLABLE void* userdata2;
+    WGPU_NULLABLE void * userdata1;
+    WGPU_NULLABLE void * userdata2;
 } WGPUQueueWorkDoneCallbackInfo WGPU_STRUCTURE_ATTRIBUTE;
 
 typedef struct WGPURequestAdapterCallbackInfo {
     WGPUChainedStruct const * nextInChain;
     WGPURequestAdapterCallback callback;
-    WGPU_NULLABLE void* userdata1;
-    WGPU_NULLABLE void* userdata2;
+    WGPU_NULLABLE void * userdata1;
+    WGPU_NULLABLE void * userdata2;
 } WGPURequestAdapterCallbackInfo WGPU_STRUCTURE_ATTRIBUTE;
 
 typedef struct WGPURequestDeviceCallbackInfo {
     WGPUChainedStruct const * nextInChain;
     WGPURequestDeviceCallback callback;
-    WGPU_NULLABLE void* userdata1;
-    WGPU_NULLABLE void* userdata2;
+    WGPU_NULLABLE void * userdata1;
+    WGPU_NULLABLE void * userdata2;
 } WGPURequestDeviceCallbackInfo WGPU_STRUCTURE_ATTRIBUTE;
 
 typedef struct WGPUUncapturedErrorCallbackInfo {
     WGPUChainedStruct const * nextInChain;
     WGPUUncapturedErrorCallback callback;
-    WGPU_NULLABLE void* userdata1;
-    WGPU_NULLABLE void* userdata2;
+    WGPU_NULLABLE void * userdata1;
+    WGPU_NULLABLE void * userdata2;
 } WGPUUncapturedErrorCallbackInfo WGPU_STRUCTURE_ATTRIBUTE;
 
 /** @} */

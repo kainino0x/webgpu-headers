@@ -291,8 +291,8 @@ typedef struct WGPU{{.Name | PascalCase}}CallbackInfo{{$.ExtSuffix}} {
     WGPUCallbackMode mode;
 {{-   end}}
     WGPU{{.Name | PascalCase}}Callback{{$.ExtSuffix}} callback;
-    WGPU_NULLABLE void* userdata1;
-    WGPU_NULLABLE void* userdata2;
+    WGPU_NULLABLE void * userdata1;
+    WGPU_NULLABLE void * userdata2;
 } WGPU{{.Name | PascalCase}}CallbackInfo{{$.ExtSuffix}} WGPU_STRUCTURE_ATTRIBUTE;
 {{  end}}{{"\n" -}}
 

@@ -331,7 +331,7 @@ func (g *Generator) CallbackArgs(f Callback) string {
 			fmt.Fprintf(sb, "%s%s %s, ", structPrefix, g.CType(arg.Type, arg.Pointer, typeSuffix), CamelCase(arg.Name))
 		}
 	}
-	sb.WriteString("WGPU_NULLABLE void* userdata1, WGPU_NULLABLE void* userdata2")
+	sb.WriteString("WGPU_NULLABLE void * userdata1, WGPU_NULLABLE void * userdata2")
 	return sb.String()
 }
 

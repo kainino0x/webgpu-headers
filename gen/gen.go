@@ -495,7 +495,7 @@ func (g *Generator) DefaultValue(member ParameterType, isDocString bool) string 
 			} else if (isDocString) {
 				return "{0}"
 			} else {
-				return "_wgpu_ZERO_INIT"
+				return "_wgpu_ENUM_ZERO_INIT(WGPU" + PascalCase(strings.TrimPrefix(member.Type, "enum.")) + ")"
 			}
 		} else {
 			return ref + "WGPU" + PascalCase(strings.TrimPrefix(member.Type, "enum.")) + "_" + PascalCase(member.Default)
